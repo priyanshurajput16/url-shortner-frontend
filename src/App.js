@@ -8,7 +8,7 @@ function App() {
 
   const handleShorten = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/shorten', {
+      const res = await axios.post('https://url-shortner-backend-1-q1y6.onrender.com/shorten', {
         originalUrl
       });
       setShortUrl(res.data.shortUrl);
